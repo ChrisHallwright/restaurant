@@ -1,1 +1,3 @@
-alert('ok');
+import { firstLoad } from "./home.js";
+
+firstLoad();
