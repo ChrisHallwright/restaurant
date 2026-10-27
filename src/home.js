@@ -1,22 +1,25 @@
-const content = document.querySelector('#content');
 import restaurantPic from './interior-design.jpeg';
 
-function firstLoad() {
+function homeDiv() {
+  const div = document.createElement('div');
+  div.classList.add('home');
+
   let el;
   
   el = document.createElement('h1');
   el.textContent = "Sopocacci's";
-  content.appendChild(el);
+  div.appendChild(el);
 
   el = document.createElement('img');
   el.src = restaurantPic;
   el.alt = 'Sample from Geometric Architect Interiors';
-  content.appendChild(el);
+  div.appendChild(el);
   
   el = document.createElement('p');
   el.textContent = 'Come dine with us and soak in the view';
-  content.appendChild(el);
+  div.appendChild(el);
 
+  return div;
 }
 
-export { firstLoad };
+export { homeDiv };
